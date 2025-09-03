@@ -1,20 +1,19 @@
-package tests;
+package assignments;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
+public class A03DriverManageWindowCommandsChrome {
 
-public class C04 {
     public static void main(String[] args) {
 
-        // TC - 04
         WebDriver driver = new ChromeDriver();
 
 
-      // Go to the w3school URL : https://www.w3schools.com/
-        driver.navigate().to("https://www.w3schools.com/");
+        // Go to Amazon URL
+        driver.navigate().to("https://www.amazon.com");
 
         // Print the position and size of the page.
         int height = driver.manage().window().getSize().height;
@@ -28,10 +27,16 @@ public class C04 {
         System.out.println("y = " + y);
 
 
-      // Adjust the position and size of the page as desired.
+        // Adjust the position and size of the page as desired.
         driver.manage().window().setPosition(new Point(100, 100));
         driver.manage().window().setSize(new Dimension(900, 700));
-    // Test that the page
+
+        // Test that the page
+
+
+        //Close the page
+        driver.quit();
+
 
 
 
@@ -39,4 +44,7 @@ public class C04 {
 
 
     }
+
+
+
 }
