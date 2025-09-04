@@ -1,4 +1,4 @@
-package tests;
+package assignments.Week02Day04;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;
