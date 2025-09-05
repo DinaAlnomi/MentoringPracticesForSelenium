@@ -1,4 +1,4 @@
-package assignments.Week02Day04;
+package assignments.Week02.Day4;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.assertTrue;
 
-public class TaskTwo {
+public class Task02 {
 
     static WebDriver driver;
 
