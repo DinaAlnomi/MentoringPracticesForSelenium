@@ -37,13 +37,13 @@ public class Task04 {
         driver.navigate().to("https://www.linkedin.com/");
         String LinkedInTitle = driver.getTitle();
 
-        Assertions.assertTrue(GoogleTitle.toLowerCase().contains("Google".toLowerCase()));
+        Assertions.assertTrue(GoogleTitle.toLowerCase().contains("Google".toLowerCase()), "Google Title is not correct");
         System.out.println("Google is correct");
 
-        Assertions.assertTrue(YoutubeTitle.toLowerCase().contains("YouTube".toLowerCase()));
+        Assertions.assertTrue(YoutubeTitle.toLowerCase().contains("YouTube".toLowerCase()), "YouTube Title is not correct");
         System.out.println("Youtube is correct");
 
-        Assertions.assertTrue(LinkedInTitle.toLowerCase().contains("LinkedIn".toLowerCase()));
+        Assertions.assertTrue(LinkedInTitle.toLowerCase().contains("LinkedIn".toLowerCase()), "LinkedIN Title is not correct");
         System.out.println("LinkedIn is correct");
 
         //Navigate back twice
@@ -51,13 +51,13 @@ public class Task04 {
         driver.navigate().back();
 
         //assert the URL of Google
-        Assertions.assertEquals(driver.getCurrentUrl(), "https://www.google.com/");
+        Assertions.assertEquals(driver.getCurrentUrl(), "https://www.google.com/", "Google URL is Not correct");
         System.out.println("Correct google URL");
 
         //Navigate forward twice and assert URL of LinkedIn
         driver.navigate().forward();
         driver.navigate().forward();
-        Assertions.assertEquals(driver.getCurrentUrl(), "https://www.linkedin.com/");
+        Assertions.assertEquals(driver.getCurrentUrl(), "https://www.linkedin.com/", "linkedIn URL is not correct");
         System.out.println("Correct LinkedIn URL");
 
 
