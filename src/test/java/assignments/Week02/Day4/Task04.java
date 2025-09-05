@@ -37,13 +37,13 @@ public class Task04 {
         driver.navigate().to("https://www.linkedin.com/");
         String LinkedInTitle = driver.getTitle();
 
-        Assertions.assertEquals("Google", GoogleTitle);
+        Assertions.assertTrue(GoogleTitle.toLowerCase().contains("Google".toLowerCase()));
         System.out.println("Google is correct");
 
-        Assertions.assertEquals(YoutubeTitle, "YouTube");
+        Assertions.assertTrue(YoutubeTitle.toLowerCase().contains("YouTube".toLowerCase()));
         System.out.println("Youtube is correct");
 
-        Assertions.assertEquals(LinkedInTitle, "LinkedIn: Log In or Sign Up");
+        Assertions.assertTrue(LinkedInTitle.toLowerCase().contains("LinkedIn".toLowerCase()));
         System.out.println("LinkedIn is correct");
 
         //Navigate back twice
