@@ -70,7 +70,7 @@ public class C02SecondAssingment {
         }
 
         @AfterAll
-        public static void tearDown() throws InterruptedException {
+        public static void tearDown()  {
             driver.quit();
         }
 
