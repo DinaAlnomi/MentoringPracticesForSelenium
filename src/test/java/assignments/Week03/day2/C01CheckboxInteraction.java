@@ -15,11 +15,10 @@ public class C01CheckboxInteraction {
 
         @BeforeAll
         public static void setUp() {
-            // Initialize WebDriver
+           
             driver = new ChromeDriver();
             driver.manage().window().maximize();
 
-            // Navigate to the checkboxes page
             driver.get("https://the-internet.herokuapp.com/checkboxes");
         }
 
@@ -28,7 +27,7 @@ public class C01CheckboxInteraction {
             // Find all checkboxes on the page
             List<WebElement> checkboxes = driver.findElements(By.xpath("//input[@type='checkbox']"));
 
-            // Check the current state of both checkboxes and print to console
+            // Check the current state of both checkboxes and print 
             System.out.println("First state of Checkbox 1: " + checkboxes.get(0).isSelected());
             System.out.println("First state of Checkbox 2: " + checkboxes.get(1).isSelected());
 
