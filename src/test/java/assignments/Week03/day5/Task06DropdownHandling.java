@@ -65,7 +65,7 @@ In 5. Dynamic Auto-Suggest Dropdown select 'Toyota'
         WebElement dynamic = driver.findElement(By.id("dynamicInput"));
         actions.moveToElement(dynamic).click().sendKeys("Toyota")
                 .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).perform();
-
+        Thread.sleep(1000);
 
 
     }
