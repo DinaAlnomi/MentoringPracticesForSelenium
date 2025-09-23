@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-
 import java.util.List;
 
 public class T04FindYoungestRecord extends BaseClass {
@@ -27,7 +26,7 @@ public class T04FindYoungestRecord extends BaseClass {
             driver.findElement(By.xpath("//button[@onclick='addRecord()']")).click();
         }
 
-        // Collect table rows
+        //table rows
         List<WebElement> rows = driver.findElements(By.xpath("//tbody/tr"));
         String[] allNames = new String[rows.size()];
         String[] allAges = new String[rows.size()];
